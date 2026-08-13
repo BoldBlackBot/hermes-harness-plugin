@@ -1,6 +1,6 @@
 ---
 name: mise
-description: Manage tool versions with mise — activation, trust, tasks, installs, and the pitfalls that bite in coding sessions. When hermes-harness-plugin is active, mise is auto-activated for terminal commands; do NOT manually prepend activation.
+description: Manage tool versions with mise — activation, trust, tasks, installs, and pitfalls. When hermes-harness-plugin is active, mise is auto-activated.
 version: 0.1.0
 author: Hermes Harness Contributors
 license: MIT

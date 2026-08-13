@@ -122,6 +122,17 @@ uv run pytest                           # run tests
 uv build                                # build sdist + wheel into dist/
 ```
 
+## Release
+
+Releases are fully automated via trusted publishing — no PyPI tokens stored as secrets.
+
+1. Bump `__version__` in `src/hermes_harness_plugin/__init__.py`
+2. Add a `CHANGELOG.md` entry
+3. Open a PR titled `release v<version>` from a fork
+4. Squash-merge — the `release.yml` workflow tags, builds, publishes to PyPI (OIDC), and creates a GitHub release
+
+The `release v` commit-message sentinel triggers the workflow on `push: main`.
+
 ## License
 
 MIT
